@@ -2,7 +2,6 @@
 /* General Styleguide */
 
 body {
-  background  : #f8f8f8;
   font-family : "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size   : 15px;
   line-height : 1.5em;
@@ -50,16 +49,15 @@ h3 {
 div#header {
   background-color : #c53d3d;
   color            : #fff;
-  padding          : 10px 10px 5px 0px;
+  padding          : 5px 10px 5px 10px;
   margin-bottom    : 15px;
   margin-top       : 15px;
-  padding-left     : 10px;
   text-transform   : lowercase;
 }
 
 div#container {
   margin : 0 auto;
-  width  : 700px;
+  width  : 650px;
 }
 
 ul#navigation {
@@ -67,8 +65,13 @@ ul#navigation {
 }
 
 ul#navigation li {
-  display    : inline;
-  list-style : none;
+  display      : inline;
+  list-style   : none;
+  padding-left : 10px;
+}
+
+ul#navigation li:before {
+  content: "::";
 }
 
 ul#navigation li a{
