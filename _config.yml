@@ -1,0 +1,14 @@
+# Server Config
+auto   : true
+server : true
+
+# Render
+pygments : true
+markdown : rdiscount
+
+# Routing
+permalink : /:year/:month/:day/:title.html
+
+# enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
+rdiscount:
+  extensions: [smart]
