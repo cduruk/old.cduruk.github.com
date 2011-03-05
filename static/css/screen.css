@@ -14,9 +14,9 @@ img, h2, h3{
 }
 
 p, blockquote {
-  font-family   : georgia, serif;
-  font-size     : 1em;
-  line-height   : 1.5em;
+  font-family : georgia, serif;
+  font-size   : 1em;
+  line-height : 1.5em;
 }
 
 h2, h3 {
@@ -50,7 +50,7 @@ blockquote {
 
 
 pre, code {
-  font-family: monospace;
+  font-family : monospace;
 }
 
 /* END -- General Styleguide */
@@ -60,9 +60,9 @@ pre, code {
 #header {
   background-color : #c53d3d;
   color            : #fff;
-  padding          : 5px 10px 5px 10px;
   margin-bottom    : 15px;
   margin-top       : 15px;
+  padding          : 5px 10px 5px 10px;
   text-transform   : lowercase;
 }
 
@@ -100,6 +100,6 @@ pre, code {
 }
 
 .archive .date {
-  display: inline-block;
-  width: 102px;
+  display : inline-block;
+  width   : 102px;
 }
