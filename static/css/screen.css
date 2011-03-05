@@ -75,7 +75,7 @@ p, blockquote {
 
 /* END -- Common Elements */
 
-p.date {
+.post .date {
   color          : #bbb;
   font-family    : "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size      : 0.875em;
@@ -87,6 +87,7 @@ p.date {
   margin-top : 40px;
 }
 
-ul.archived li .date {
-  font-family : monospace;
+.archive .date {
+  display: inline-block;
+  width: 102px;
 }
