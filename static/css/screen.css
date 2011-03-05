@@ -66,10 +66,10 @@ p, blockquote {
 #navigation li {
   display      : inline;
   list-style   : none;
-  padding-left : 25px;
+  padding-left : 20px;
 }
 
-#navigation li a{
+#header a{
   color : #fff;
 }
 
@@ -77,8 +77,16 @@ p, blockquote {
 
 p.date {
   color          : #bbb;
-  font-family    : "lucida grande", tahoma, verdana, arial, sans-serif;;
+  font-family    : "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size      : 0.875em;
   text-transform : uppercase;
   margin-top     : -5px;
+}
+
+ul.archived {
+  margin-top : 40px;
+}
+
+ul.archived li .date {
+  font-family : monospace;
 }
