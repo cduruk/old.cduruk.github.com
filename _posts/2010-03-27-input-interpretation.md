@@ -15,20 +15,22 @@ So YouTube is smart enough to realize that I am looking for HD videos but it doe
 
 Speaking of, I am pretty sure Python takes the cake with it's weird user input interpretation.
 
-    $ python
-    >>> exit
-    Use exit() or Ctrl-D (i.e. EOF) to exit #what?
-    >>> quit
-    Use quit() or Ctrl-D (i.e. EOF) to exit #really?
-    >>> quit()
-    $
+  {% highlight bash %}
+      $ python
+      >>> exit
+      Use exit() or Ctrl-D (i.e. EOF) to exit #what?
+      >>> quit
+      Use quit() or Ctrl-D (i.e. EOF) to exit #really?
+      >>> quit()
+  {% endhighlight %}
 
 That being said, it's at least a bit smarter than the Ruby command.
 
-    $ ruby
-    # Yep, nothing. Should have used irb, for some ungodly reason
-    ^Cruby: Interrupt
-    $
+  {% highlight bash %}
+      $ ruby
+      # Yep, nothing. Should have used irb, for some ungodly reason
+      ^Cruby: Interrupt
+  {% endhighlight %}
 
 But perhaps, it's better to have your input interpretation not so smart. I mean, it can get outright creepy at times.
 

@@ -22,23 +22,23 @@ Another problem that came up was getting rid of unnecessary and distractive UI e
 
 Initially, we tried to get rid of the cursor directly in the browser, using this small CSS trick.
 
-{% highlight css %}
-    * {
-      cursor: none;
-    }
-{% endhighlight css %}
+  {% highlight css %}
+      * {
+        cursor: none;
+      }
+  {% endhighlight %}
 
 This code seemed to work in our browsers (Google Chrome running on Mac) but didn't work in the production environment (Google Chrome running on Vista). Finally, we came up a rather hacky solution; we just changed the system-wide cursor from an arrow to a single 1 pixel dot. This essentially made sure that there would be no cursor what so ever. Although this has made the computer pretty much impossible to use with the touchpad but we got around that by using the stylus (or just our fingers).
 
 ### Removing the Scrollbars
 One other small problem was getting rid of the scrollbars. Since we had total control over our production environment (and thus the browser), I just used a new CSS3 trick I learned.
 
-{% highlight css %}
-    body {
-      overflow-x:hidden;
-      overflow-y:hidden;
-    }
-{% endhighlight css %}
+  {% highlight css %}
+      body {
+        overflow-x:hidden;
+        overflow-y:hidden;
+      }
+  {% endhighlight %}
 
 ### Hiding the Selection Highlighting
 The last problem we had to fix was caused by how people used the touch screens and admittedly was the most interesting one. The problem was caused by how our users had never used a touch screen before. I could tell you all about it but a picture would probably give you a better idea.
@@ -51,11 +51,11 @@ I initially tried a very complex solution; put every single element on the pag
 
 Thankfully, CSS3 again came to my rescue.
 
-{% highlight css %}
-    *::selection {
-      background: transparent
-    }
-{% endhighlight css %}
+  {% highlight css %}
+      *::selection {
+        background: transparent
+      }
+  {% endhighlight %}
 
 What this does is makes the background of selection pseudo-element on every single tag transparent. Since the selection pseudo-element essentially consists of just color and background properties, setting the background transparent was enough to do the trick.
 
