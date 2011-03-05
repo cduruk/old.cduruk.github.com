@@ -7,7 +7,7 @@ title: Microsoft Outsci-fied Sci-Fi
 
 Justin Timberlake's music is one of my guilty pleasures and I think most of his music videos are pretty quality too. After hearing the "Technology" song on radio, it occurred to me that I have never seen the video so I looked it up and started watching.
 
-<img src="http://media.tumblr.com/tumblr_kzcphzUL2O1qazj16.png" alt="Gloves" />
+![Gloves](http://media.tumblr.com/tumblr_kzcphzUL2O1qazj16.png)
 
 And while watching this part of the video where the guy uses some sort of a fancy holographic or touch-screen, it just hit me that with Project Natal, Microsoft essentially went beyond what science-fiction writers would be possible. I am not talking about the transparent screens or holograms or other things. I am talking about the way user interacts with the machine (which is clearly highly inspired by the well-known Minority Report interface).
 

@@ -9,7 +9,7 @@ It really drives me nuts when command line interfaces interpret what I am trying
 
 Look at this screenshot from YouTube.
 
-<img src="http://media.tumblr.com/tumblr_kzyg75ZcWJ1qazj16.png"/>
+![YouTube](http://media.tumblr.com/tumblr_kzyg75ZcWJ1qazj16.png)
 
 So YouTube is smart enough to realize that I am looking for HD videos but it doesn't seem to be doing that search for me itself. Instead it gives me a link with some ambigous text. Do not get me wrong; this is far and away better than what most search engines in this specific case would do --and YouTube should be lauded for that-- but it's still a bit hacky for my liking.
 
@@ -32,4 +32,4 @@ That being said, it's at least a bit smarter than the Ruby command.
 
 But perhaps, it's better to have your input interpretation not so smart. I mean, it can get outright creepy at times.
 
-<img src="http://media.tumblr.com/tumblr_kzygryaGSM1qazj16.png" />
+![Google](http://media.tumblr.com/tumblr_kzygryaGSM1qazj16.png)

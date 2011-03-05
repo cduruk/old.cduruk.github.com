@@ -27,7 +27,7 @@ As I said, it was all pretty hectic. Let me put it in some numbers. In total, bo
 
 So, where does it all leave us?
 
-<img src="http://media.tumblr.com/tumblr_kzet1ditkZ1qazj16.png" />
+![Digg](http://media.tumblr.com/tumblr_kzet1ditkZ1qazj16.png)
 
 Starting June, I am going to be joining Digg as a software engineer.
 

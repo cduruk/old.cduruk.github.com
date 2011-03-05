@@ -43,7 +43,7 @@ One other small problem was getting rid of the scrollbars. Since we had total co
 ### Hiding the Selection Highlighting
 The last problem we had to fix was caused by how people used the touch screens and admittedly was the most interesting one. The problem was caused by how our users had never used a touch screen before. I could tell you all about it but a picture would probably give you a better idea.
 
-<img src="http://media.tumblr.com/tumblr_kzusfqufPn1qazj16.jpg" />
+![Selection Hiding](http://media.tumblr.com/tumblr_kzusfqufPn1qazj16.jpg)
 
 Here is the crux of the problem: instead of simply tapping (Hi Apple HIG documents) the touch-screen, our users would touch and almost invariably move their fingers ever so slightly on the screen so that the browser to select essentially every single element. Not only it looked ugly, it confused our users and we had to fix it.
 
