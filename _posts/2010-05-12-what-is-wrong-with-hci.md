@@ -8,7 +8,7 @@ title: What is wrong with HCI?
 
 On May 10, 2010 I turned in our code and presentation file for my Human-Computer Interaction capstone project, virtually marking the end of my academic career at Carnegie Mellon as an undergraduate and probably my academic career overall. I graduated with double majors, or more accurately as a cognitive science with an _additional_ major in Human-Computer Interaction from [Human-Computer Interaction Institute](http://www.hcii.cmu.edu).
 
-Although it was only an additional major, HCI definitely took a bigger mindshare for me, and for good reason. I care deeply about how people use computers; so much that even my college application essays included anecdotes and thoughts about how my parents did not seem to _get_it_.
+Although it was only an additional major, HCI definitely took a bigger mindshare for me, and for good reason. I care deeply about how people use computers; so much that even my college application essays included anecdotes and thoughts about how my parents did not seem to _get it_.
 
 However, just like [my friend Paul](http://in.somniac.me/2009/12/30/not-feeling-the-hci-kool-aid), I have some qualms about the HCI education that I received. Paul's main issue with the program is that he is not sure if what he learned--and did--transfers into creating better products and interfaces. It is a valid concern and I would similarly encourage you to read the comments posted by me and Marshall, who in addition to doing HCI as an additional major, did the [accelerated master's program](http://www.hcii.cmu.edu/accelerated-masters-program).
 
