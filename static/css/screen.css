@@ -41,6 +41,11 @@ p, blockquote {
   margin-bottom : 15px;
 }
 
+pre, code {
+  font-family: monospace;
+  margin-bottom : 15px;
+}
+
 /* END -- General Styleguide */
 
 /* BEGIN -- Common Elements */
