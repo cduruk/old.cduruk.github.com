@@ -37,7 +37,7 @@ Of course, that would be looking at it wrong, the administration would probably 
 That is not necessarily because the skills themselves aren't valuable or marketable but it's that they do not add as much value as other skills such as software development, visual design, business.  Now, an exception to this rule is program management. Standing somewhere between all those fields, program managers, or PMs as they are often called, are the ones responsible that something that's valuable rolls out at the end of the day. The product has to work, has to be usable, and provide value to the business that created it as well as its users. This, I believe is the sweet spot for a lot of the HCI majors and fits surprisingly well with the curriculum. Unfortunately, it'd be naive to think HCI should train people for only a certain job.
 
 ### Lack of Focus
-I think a lot of the issues with the HCI program is caused by lack of a clear mission statement applicable for an undergraduate program. Let's look at what [Human-Computer Interaction Institute](http://www.hcii.cmu.edu/about-hcii">Human-Computer Interaction Institute<) (HCII) says about it.
+I think a lot of the issues with the HCI program is caused by lack of a clear mission statement applicable for an undergraduate program. Let's look at what [Human-Computer Interaction Institute](http://www.hcii.cmu.edu/about-hcii">Human-Computer Interaction Institute) (HCII) says about it.
 
 > The HCII's mission is to understand and create technology that harmonizes with and improves human capabilities, goals, and social environments through interdisciplinary research and education in design, computer science, and behavioral and social sciences.
 
