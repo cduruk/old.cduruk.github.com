@@ -53,6 +53,10 @@ nav {
   float : right;
 }
 
+time {
+  display : block;
+}
+
 /* END -- General Styleguide */
 
 /* BEGIN -- Common Elements */
