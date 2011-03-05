@@ -1,0 +1,76 @@
+/* BEGIN */
+/* General Styleguide */
+
+body {
+  background  : #f8f8f8;
+  font-family : "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size   : 15px;
+  line-height : 1.5em;
+}
+
+a, a:active{
+  color : #c53d3d;
+  text-decoration : none;
+}
+
+a:hover, a:visited {
+  text-decoration : underline;
+}
+
+blockquote {
+  border-left  : 2px solid #ccc;
+  margin-left  : 30px;
+  padding-left : 10px;
+}
+
+h2, h3 {
+  font-weight   : bold;
+  margin-top    : 25px;
+  margin-bottom : 10px;
+}
+
+p, blockquote {
+  font-family   : georgia, serif;
+  font-size     : 1em;
+  line-height   : 1.5em;
+  margin-bottom : 15px;
+}
+
+h2  {
+  font-size : 1.875em;
+}
+
+h3 {
+  font-size : 1.5em;
+}
+
+/* General Styleguide */
+/* END */
+
+div#header {
+  background-color : #c53d3d;
+  color            : #fff;
+  padding          : 10px 10px 5px 0px;
+  margin-bottom    : 15px;
+  margin-top       : 15px;
+  padding-left     : 10px;
+  text-transform   : lowercase;
+}
+
+div#container {
+  margin : 0 auto;
+  width  : 700px;
+}
+
+ul#navigation {
+  float : right;
+}
+
+ul#navigation li {
+  display    : inline;
+  list-style : none;
+}
+
+ul#navigation li a{
+  color : #fff;
+}
