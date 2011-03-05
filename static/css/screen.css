@@ -69,22 +69,29 @@ pre, code {
   width  : 650px;
 }
 
-#navigation {
-  float : right;
+#header ul li, #footer ul li {
+  padding-left : 20px;
 }
 
-#navigation li {
-  display      : inline;
-  list-style   : none;
-  padding-left : 20px;
+#header ul, #footer ul{
+  float : right;
 }
 
 #header a {
   color : #fff;
 }
 
-#header span.name {
+#footer {
+  border-top     : 1px solid #c53d3d;
+  font-size      : 0.75em;
+  height         : 30px;
+  margin-top     : 30px;
+  text-transform : uppercase;
+}
 
+ul.menu li{
+  display    : inline;
+  list-style : none;
 }
 
 /* END -- Common Elements */
