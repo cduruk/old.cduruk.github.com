@@ -41,13 +41,11 @@ h3 {
   font-size : 1.2em;
 }
 
-
 blockquote {
   border-left  : 2px solid #bbb;
   margin-left  : 30px;
   padding-left : 10px;
 }
-
 
 pre, code {
   font-family : monospace;
@@ -81,8 +79,12 @@ pre, code {
   padding-left : 20px;
 }
 
-#header a{
+#header a {
   color : #fff;
+}
+
+#header span.name {
+
 }
 
 /* END -- Common Elements */
