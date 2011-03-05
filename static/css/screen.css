@@ -5,7 +5,7 @@ body {
   line-height : 1.5em;
 }
 
-a{
+a {
   color : #c53d3d;
   text-decoration : none;
 }
@@ -43,7 +43,9 @@ p, blockquote {
 
 /* END -- General Styleguide */
 
-div#header {
+/* BEGIN -- Common Elements */
+
+#header {
   background-color : #c53d3d;
   color            : #fff;
   padding          : 5px 10px 5px 10px;
@@ -52,28 +54,26 @@ div#header {
   text-transform   : lowercase;
 }
 
-div#container {
+#container {
   margin : 0 auto;
   width  : 650px;
 }
 
-ul#navigation {
+#navigation {
   float : right;
 }
 
-ul#navigation li {
+#navigation li {
   display      : inline;
   list-style   : none;
-  padding-left : 10px;
+  padding-left : 25px;
 }
 
-ul#navigation li:before {
-  content: "::";
-}
-
-ul#navigation li a{
+#navigation li a{
   color : #fff;
 }
+
+/* END -- Common Elements */
 
 p.date {
   color          : #bbb;
