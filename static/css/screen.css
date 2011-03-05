@@ -3,6 +3,8 @@ body {
   font-family : "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size   : 15px;
   line-height : 1.5em;
+  margin      : 0 auto;
+  width       : 650px;
 }
 
 p, pre, code, blockquote, ul {
@@ -51,6 +53,10 @@ pre, code {
   font-family : monospace;
 }
 
+nav {
+  float : right;
+}
+
 /* END -- General Styleguide */
 
 /* BEGIN -- Common Elements */
@@ -58,27 +64,21 @@ pre, code {
 #header {
   background-color : #c53d3d;
   color            : #fff;
-  margin-bottom    : 15px;
+  margin-bottom    : 10px;
   margin-top       : 15px;
   padding          : 5px 10px 5px 10px;
   text-transform   : lowercase;
-}
-
-#container {
-  margin : 0 auto;
-  width  : 650px;
-}
-
-#header ul li, #footer ul li {
-  padding-left : 20px;
-}
-
-#header ul, #footer ul{
-  float : right;
+  overflow         : auto;
 }
 
 #header a {
   color : #fff;
+}
+
+#header .name {
+  font-family   : "lucida grande", tahoma, verdana, arial, sans-serif;
+  float         : left;
+  margin-bottom : 0px;
 }
 
 #footer {
@@ -89,9 +89,14 @@ pre, code {
   text-transform : uppercase;
 }
 
+ul.menu {
+  margin-bottom : 0px;
+}
+
 ul.menu li{
-  display    : inline;
-  list-style : none;
+  display      : inline;
+  list-style   : none;
+  padding-left : 20px;
 }
 
 /* END -- Common Elements */
@@ -101,6 +106,7 @@ ul.menu li{
   font-family    : "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size      : 0.875em;
   text-transform : uppercase;
+  margin-bottom  : 10px;
   margin-top     : -5px;
 }
 

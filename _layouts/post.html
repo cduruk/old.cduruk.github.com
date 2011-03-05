@@ -6,11 +6,10 @@ layout: default
   <h2>
     <a href="{{ page.url }}">{{ page.title }}</a>
   </h2>
-  <p class="date">{{ page.date | date_to_string }}</p>
-  <div class="content">
+  <time class="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+    {{ page.date | date_to_string }}
+  </time>
+  <article class="content">
     {{ content }}
-  </div>
-
-  <div class="after">
-  </div>
+  </article>
 </div>
