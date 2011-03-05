@@ -31,7 +31,7 @@ h2  {
 }
 
 h3 {
-  font-size : 1.5em;
+  font-size : 1.2em;
 }
 
 p, blockquote {
@@ -83,7 +83,7 @@ p.date {
   margin-top     : -5px;
 }
 
-ul.archived {
+.under-h2 {
   margin-top : 40px;
 }
 
