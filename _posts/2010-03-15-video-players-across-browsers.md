@@ -9,6 +9,7 @@ I just realized how different all three major browsers have different default vi
 
 ### Chrome
 ![Chrome](/static/images/video-chrome.png)
+
 It sure has some flaws. The blue bar looks clunky; it is too thick. Also, the blue color is too bright to be almost distracting. Moreover, although the playhead is very clear and there's a timestamp for it, there's no way to tell how long the entire video is.
 
 ### Firefox
