@@ -4,11 +4,11 @@ title: About
 type: about
 ---
 
-<img class="pretty-frame" src="/static/images/site/can-duruk.jpg" align="right" title="Can Duruk" alt="A photograph of Can Duruk" width="120px" height="133px">
+<img class="pretty-frame" src="/static/images/site/can-duruk.jpg" align="right" title="Can Duruk" alt="A photograph of Can Duruk" width="120px" height="133px"/>
 
 ## Hi!
 
-### About Can
+### About Me
 I am Can Duruk, a developer with an eye for design. I am from Turkey, hence the funny name. I like building building user interfaces people love to use.
 
 ### Background
