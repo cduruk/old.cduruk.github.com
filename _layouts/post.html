@@ -1,15 +1,14 @@
 ---
 layout: default
+type: post
 ---
 
-<div class="post">
-  <h2>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h2>
-  <time class="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-    {{ page.date | date_to_string }}
-  </time>
-  <article class="content">
-    {{ content }}
-  </article>
-</div>
+<h2>
+  <a href="{{ page.url }}">{{ page.title }}</a>
+</h2>
+<time class="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+  {{ page.date | date_to_string }}
+</time>
+<article class="content">
+  {{ content }}
+</article>

@@ -6,13 +6,13 @@
   <link rel="stylesheet" media="screen" href="/static/css/syntax.css" type="text/css" />
   <title>can duruk</title>
 </head>
-<body>
+<body {% if page.type %}class="{{page.type}}"{% endif %}>
     <header id="header">
       <p class="name"><a href="/">Can Duruk</a></p>
       <nav>
         <ul class="menu">
-          <li><a href="/archive.html">Archive</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li><a href="/archive/">Archive</a></li>
+          <li><a href="/about/">About</a></li>
         </ul>
       </nav>
     </header>
@@ -20,8 +20,8 @@
     <footer id="footer">
       <nav>
         <ul class="menu">
-          <li><a href="/archive.html">Archive</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li><a href="/archive/">Archive</a></li>
+          <li><a href="/about/">About</a></li>
           <li><a href="https://github.com/cduruk/cduruk.github.com" target="_blank">Source</a></li>
         </ul>
       </nav>
