@@ -7,7 +7,7 @@ body {
   width       : 650px;
 }
 
-p, h2, h3, img, pre, code, blockquote, ul, div {
+p, h1, h2, h3, img, pre, code, blockquote, ul, div {
   margin-bottom : 10px;
 }
 
@@ -17,7 +17,7 @@ p, blockquote {
   line-height : 1.5em;
 }
 
-h2, h3 {
+h1, h2, h3 {
   font-weight : bold;
   margin-top  : 25px;
 }
@@ -31,8 +31,9 @@ a:hover {
   text-decoration : underline;
 }
 
-h2  {
-  font-size : 1.875em;
+h1, h2  {
+  margin-bottom : 20px;
+  font-size     : 1.875em;
 }
 
 h3 {
@@ -55,6 +56,10 @@ nav {
 
 time {
   display : block;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 /* END -- General Styleguide */
@@ -89,6 +94,36 @@ time {
   text-transform : uppercase;
 }
 
+/* END -- Common Elements */
+
+/* BEGIN -- Page Specific. */
+
+/* Pages are annotated by their class.*/
+
+.post .date {
+  color          : #bbb;
+  font-family    : "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size      : 0.875em;
+  text-transform : uppercase;
+  margin-bottom  : 10px;
+  margin-top     : -20px;
+}
+
+.archive .date {
+  display : inline-block;
+  width   : 102px;
+}
+
+.archive ul {
+  list-style-type: none;
+}
+
+.about img {
+  margin-top : 15px;
+}
+
+/* END -- Page Specific. */
+
 .menu {
   margin-bottom : 0px;
 }
@@ -104,22 +139,8 @@ time {
   border      : 1px solid #ddd;
 }
 
-/* END -- Common Elements */
-
-.post .date {
-  color          : #bbb;
-  font-family    : "lucida grande", tahoma, verdana, arial, sans-serif;
-  font-size      : 0.875em;
-  text-transform : uppercase;
-  margin-bottom  : 10px;
-  margin-top     : -10px;
-}
-
-.under-h2 {
-  margin-top : 40px;
-}
-
-.archive .date {
-  display : inline-block;
-  width   : 102px;
+.pretty-frame {
+  border      : 1px solid #bbb;
+  padding     : 5px;
+  margin-left : 10px;
 }
