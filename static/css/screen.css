@@ -7,7 +7,7 @@ body {
   width       : 650px;
 }
 
-p, h2, h3, img, pre, code, blockquote, ul {
+p, h2, h3, img, pre, code, blockquote, ul, div {
   margin-bottom : 10px;
 }
 
@@ -89,14 +89,19 @@ time {
   text-transform : uppercase;
 }
 
-ul.menu {
+.menu {
   margin-bottom : 0px;
 }
 
-ul.menu li{
+.menu li {
   display      : inline;
   list-style   : none;
   padding-left : 20px;
+}
+
+.highlight {
+  padding-top : 10px;
+  border      : 1px solid #ddd;
 }
 
 /* END -- Common Elements */
