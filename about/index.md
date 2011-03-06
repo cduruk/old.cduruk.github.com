@@ -20,6 +20,6 @@ I lurk heavily on the internets, mostly going by the moniker `cduruk`.
 * [Twitter](http://twitter.com/cduruk)
 * [Digg](http://digg.com/cduruk)
 * [GitHub](http://github.com/cduruk)
+* [Quora](http://quora.com/Can-Duruk)
 * [Last.fm](http://last.fm/user/cduruk)
 * [Flickr](http://flickr.com/photos/duruk)
-* [Facebook](http://facebook.com/cduruk)
