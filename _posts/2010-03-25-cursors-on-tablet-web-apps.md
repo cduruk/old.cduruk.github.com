@@ -3,7 +3,7 @@ layout: post
 categories: [javascript, css, ui, dev, tablet, touchscreen]
 tumblr_id: 473067888
 date: 2010-03-25 20:00:00 UTC
-title: Some CSS and JS Tricks for Tablet Web Apps
+title: Cursors on Tablet Web Apps
 ---
 
 I am currently working in a team creating a web application that is supposed to be used on a touch screen, not a touch screen phone but an actual tablet PC that we we were using a touch screen. That rather unconventional setup initially created some problems all of which I'll document how to solve.
