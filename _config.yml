@@ -9,4 +9,4 @@ rdiscount :
   extensions: [smart]
 
 # Routing
-permalink : /:year/:month/:day/:title.html
+permalink : pretty
