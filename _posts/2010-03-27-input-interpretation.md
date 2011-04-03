@@ -1,6 +1,5 @@
 ---
 layout: post
-tumblr_id: 477478721
 date: 2010-03-27 19:24:00 UTC
 title: Input Interpretation
 ---

@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: [javascript, css, ui, dev, tablet, touchscreen]
-tumblr_id: 473067888
 date: 2010-03-25 20:00:00 UTC
 title: Cursors on Tablet Web Apps
 ---

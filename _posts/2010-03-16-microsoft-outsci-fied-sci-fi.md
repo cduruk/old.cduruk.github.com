@@ -1,6 +1,5 @@
 ---
 layout: post
-tumblr_id: 451211465
 date: 2010-03-16 01:54:00 UTC
 title: Microsoft Outsci-fied Sci-Fi
 ---

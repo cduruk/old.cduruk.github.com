@@ -1,6 +1,5 @@
 ---
 layout: post
-tumblr_id: 448796880
 date: 2010-03-15 00:44:00 UTC
 title: Video Players across Browsers
 ---

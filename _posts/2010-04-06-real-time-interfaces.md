@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: [quora, facebook, ui]
-tumblr_id: 500295281
 date: 2010-04-06 09:06:00 UTC
 title: Real-time Interfaces
 ---

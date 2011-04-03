@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: [hci, carnegiemellon]
-tumblr_id: 593047593
 date: 2010-05-12 19:02:00 UTC
 title: What is wrong with HCI?
 ---
