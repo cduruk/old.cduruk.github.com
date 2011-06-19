@@ -4,7 +4,7 @@ body {
   font-size   : 1.125em;
   line-height : 1.5em;
   margin      : 0 auto;
-  width       : 650px;
+  width       : 720px;
 }
 
 p, h1, h2, h3, img, pre, code, blockquote, ul, div {
@@ -49,6 +49,11 @@ blockquote {
 
 pre, code {
   font-family : monospace;
+  overflow: auto;
+}
+
+div.highlight {
+  margin: 20px 0;
 }
 
 nav {
