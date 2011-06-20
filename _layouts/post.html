@@ -15,8 +15,9 @@ type: post
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'candurukblog';
-    var disqus_identifier = '{{ page.title }}';
-    var disqus_url = '{{ page.url }}';
+    if (document.location.href){
+      var disqus_url = document.location.href;
+    }
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
