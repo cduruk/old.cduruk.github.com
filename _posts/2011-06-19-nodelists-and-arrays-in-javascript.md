@@ -145,8 +145,7 @@ essentially doing here is borrowing the `slice()` method from the Array's
 getting the entire list itself. And as `slice()` returns an actual array, we
 end with a real array, as opposed to a NodeList. More explanation on `slice()`
 works can be found on Robert Sosinski's excellent post on [Binding Scope in
-JavaScript](http://www.robertsosinski.com/2009/04/28/binding-scope-in-javascr
-pt/).
+JavaScript](http://www.robertsosinski.com/2009/04/28/binding-scope-in-javascript/).
 
 There you have it. Except, if you use Internet Explorer, your clever one-liner
 may not work as expected so you actually have to resort to iterating over your
