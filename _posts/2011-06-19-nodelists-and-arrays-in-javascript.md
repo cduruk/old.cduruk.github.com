@@ -6,14 +6,12 @@ title: NodeLists and Arrays in JavaScript
 
 JavaScript is an admittedly quirky language, and its almost array-like objects
 is one of the most glaring issues. And of all those array-like objects,
-NodeLists are one of the most commonly used ones.
+NodeLists are one of the most commonly used ones array-like objects that
+beginners trip on when they use methods like
+`document.getElementsByTagName()`.
 
-The first thing to note is that NodeLists aren't exactly part of the
-JavaScript but they are instead part of the DOM APIs the browsers provide
-through JavaScript. The relationship between DOM and JavaScript is beyond the
-scope of this article but knowing that NodeLists aren't exactly part of
-JavaScript language itself might be useful in understanding the relationship
-between JavaScript arrays and NodeLists.
+In this post, I'll try to explain what NodeLists are, how they relate to
+arrays in JavaScript and how you can work with them in a comfortable way.
 
 So what is exactly an NodeList? The W3C defines the NodeList [as follows](http://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-536297177):
 
@@ -24,6 +22,12 @@ Essentially, a NodeList is what you get when you call any method such as
 `document.getElemetsByTagName()`, `document.querySelectorAll()` and such. In
 fact, it was my experience with `document.querySelectorAll()` that motivated
 me to write this post.
+
+NodeLists aren't exactly part of the JavaScript but they are instead part of
+the DOM APIs the browsers provide through JavaScript. The relationship between
+DOM and JavaScript is beyond the scope of this article but knowing that
+NodeLists aren't exactly part of JavaScript language itself might be useful in
+understanding the relationship between JavaScript arrays and NodeLists.
 
 Careful readers of the W3C definition will note that arrays in most languages,
 like JavaScript, are almost what this definition implies NodeLists are:
