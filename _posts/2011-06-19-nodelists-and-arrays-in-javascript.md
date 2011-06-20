@@ -99,6 +99,12 @@ So those two elements, `myList` and `surelyArray` are definitely constructed
 by different constructors so it's no wonder that they don't share the same
 methods.
 
+Note that my examples here are contrived examples and using the `toString()`
+method on the constructor property of an Array is not ideal way, as
+pointed out in the comments by Mozilla engineer [Frank
+Yan](http://twitter.com/frankyan/). In your own code, you might want to use
+`instanceof` or some other more robust method to see if something is an array.
+
 In fact, it turns out that NodeLists support accessing elements by their index
 and they do have `length` property but that's essentially where the
 similarities end. If you want to call any of the array methods on a NodeList,
@@ -141,13 +147,17 @@ The one-liner we used before is actually pretty simple. What we are
 essentially doing here is borrowing the `slice()` method from the Array's
 `prototype` and applying it to on NodeList, slicing it from it's beginning, so
 getting the entire list itself. And as `slice()` returns an actual array, we
-end with a real array, as opposed to a NodeList. More explanation on `slice()`
+end with a real array, as opposed to a NodeList. More explanation on `call()`
 works can be found on Robert Sosinski's excellent post on [Binding Scope in
 JavaScript](http://www.robertsosinski.com/2009/04/28/binding-scope-in-javascript/).
 
-There you have it. Except, if you use Internet Explorer, your clever one-liner
-may not work as expected so you actually have to resort to iterating over your
-NodeList and putting them into an array. Pretty simple:
+There you have it. Except, if you use Internet Explorer. It turns out that
+Internet Explorer versions before Internet Explorer 9 cannot handle calling
+`slice()` on NodeLists --and in general behave badly on host object
+interactions.
+
+One way to fix that problem is simple create a new array, iterate over your
+existing NodeList and push things into your new array.
 
 {% highlight javascript %}
     > var myIEArray = [];
@@ -159,6 +169,30 @@ NodeList and putting them into an array. Pretty simple:
           [native code]
       }"
 {% endhighlight %}
+
+This is a good start but however there's a slight issue with that code that
+[James-David Dalton](http://twitter.com/jdalton/) pointed out. It's possible
+for a NodeList to have an element in it that has the id `length`. In that
+case, the expression `myList.length` would no longer be an integer but the
+element with the id `length` itself. Nevertheless, this is easy to fix.
+
+{% highlight javascript %}
+    > var node, i = -1, myIEArray = [];
+      undefined
+    > var myList = document.querySelectorAll('.story-item');
+      undefined
+    > while (node = myList[++i]) { myIEArray[i] = node; }
+      <div class=​"story-item">​…​</div>​
+{% endhighlight %}
+
+This code involves a bit more trickery. In essence, we are again looping over
+the elements in the `myList` NodeList but making sure that a given index is
+not `undefined` which is false in JavaScript. The reason we initialize our
+index variable `i` to -1 is that we increment the index before we actually
+try to access the `i`th index. So if we were to set the `i` to 0 instead of
+-1, we would both miss the first element in the MyList NodeList and also start
+setting the elements in the `myIEArray` from its 1st index, leaving
+`myIEArray[0]` undefined.
 
 There you have it, for real this time, a real array from your NodeList.
 
