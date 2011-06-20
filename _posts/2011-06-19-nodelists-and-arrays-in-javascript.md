@@ -24,10 +24,7 @@ fact, it was my experience with `document.querySelectorAll()` that motivated
 me to write this post.
 
 NodeLists aren't exactly part of the JavaScript but they are instead part of
-the DOM APIs the browsers provide through JavaScript. The relationship between
-DOM and JavaScript is beyond the scope of this article but knowing that
-NodeLists aren't exactly part of JavaScript language itself might be useful in
-understanding the relationship between JavaScript arrays and NodeLists.
+the DOM APIs the browsers provide through JavaScript; this explains why NodeLists exist as a separate data structure than arrays in JavaScript, as pointed out by Mozilla engineer [Frank Yan](http://twitter.com/frankyan) in the comments.
 
 Careful readers of the W3C definition will note that arrays in most languages,
 like JavaScript, are almost what this definition implies NodeLists are:
@@ -101,9 +98,9 @@ methods.
 
 Note that my examples here are contrived examples and using the `toString()`
 method on the constructor property of an Array is not ideal way, as
-pointed out in the comments by Mozilla engineer [Frank
-Yan](http://twitter.com/frankyan/). In your own code, you might want to use
-`instanceof` or some other more robust method to see if something is an array.
+pointed out in the comments by Frank Yan again. In your own code, you might
+want to use `instanceof` or some other more robust method to see if something
+is an array.
 
 In fact, it turns out that NodeLists support accessing elements by their index
 and they do have `length` property but that's essentially where the
