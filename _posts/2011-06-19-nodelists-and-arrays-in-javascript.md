@@ -53,8 +53,8 @@ Digg homepage.
 {% endhighlight %}
 
 Definitely looks like an array from here, if nothing else other than fact that
-the way our console inspects `myList` starts with a square bracket. Let's try
-some basic array actions with it:
+the way our console inspects `myList` starts and ends with a square bracket.
+Let's try some basic array actions with it:
 
 {% highlight javascript %}
     > myList.length;
@@ -75,8 +75,7 @@ from it's 3rd element.
 {% endhighlight %}
 
 Wait, what happened? Well, this is where the between NodeLists and arrays in
-JavaScript start to come to surface. Let's try to see if NodeList actually
-an array (which is actually a [tricky
+JavaScript start to surface. Let's try to see if NodeList actually an array (which is actually a [tricky
 problem](http://javascript.crockford.com/remedial.html) in JavaScript itself).
 
 {% highlight javascript %}
@@ -84,8 +83,8 @@ problem](http://javascript.crockford.com/remedial.html) in JavaScript itself).
       "[object NodeListConstructor]"
 {% endhighlight %}
 
-Let's see what an array that we sure know is an array looks like
-in JavaScript using the same method.
+Let's see what an array, that we definitely know to be an array looks like
+using the same technique (where we look at its' constructor).
 
 {% highlight javascript %}
     > var surelyArray = ['foo', 'bar'];
@@ -108,15 +107,13 @@ you will just get an error.
 If you think about what NodeLists are and the re-read the definition, this
 (kind of) makes sense. While arrays are essentially a collection of elements
 held in memory and are part of the JavaScript, NodeLists are _live_ references
-to actual DOM elements. I am not sure if that explanation is more a
-justification or an after-the-fact rationalization but it's one way to look
-at things.
+to actual DOM elements.
 
 Luckily, you can relatively easily convert NodeLists into arrays so that you
 can easily call all your favorite array methods like `push()`, `slice()` on
 them.
 
-Let's see a quick one-liner to do so:
+Let's see a quick way to convert a NodeList into an array:
 
 {% highlight javascript %}
     > var myArray = Array.prototype.slice.call(myList, 0);
