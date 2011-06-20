@@ -107,7 +107,8 @@ you will just get an error.
 If you think about what NodeLists are and the re-read the definition, this
 (kind of) makes sense. While arrays are essentially a collection of elements
 held in memory and are part of the JavaScript, NodeLists are _live_ references
-to actual DOM elements.
+to actual DOM elements, except for the `document.querySelectorAll()` method,
+which returns not live but static NodeLists.
 
 Luckily, you can relatively easily convert NodeLists into arrays so that you
 can easily call all your favorite array methods like `push()`, `slice()` on
@@ -162,8 +163,11 @@ NodeList and putting them into an array. Pretty simple:
 There you have it, for real this time, a real array from your NodeList.
 
 One thing is worth mentioning though; when you convert your NodeList into an
-array, you are no longer dealing with a _live_ NodeList but instead an array
-of DOM nodes. This has some interesting consequences. Going back to our
+array, you are no longer dealing with a _live_ NodeList (again,
+`document.querySelectorAll()` actually returns not live but static NodeLists)
+but instead an array of DOM nodes.
+
+This has some interesting consequences. Going back to our
 example where we ran the `myArray.pop()`, you'd not the top Digg story
 disappearing as your array is just a collection of DOM nodes, not
 representation of your DOM anymore.
