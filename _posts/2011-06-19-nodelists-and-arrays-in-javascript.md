@@ -19,12 +19,12 @@ So what is exactly an NodeList? The W3C defines the NodeList [as follows](http:/
 > nodes, without defining or constraining how this collection is implemented.
 
 Essentially, a NodeList is what you get when you call any method such as
-`document.getElemetsByTagName()`, `document.querySelectorAll()` and such. In
-fact, it was my experience with `document.querySelectorAll()` that motivated
-me to write this post.
+`document.getElemetsByTagName()`, `document.querySelectorAll()` and such.
 
-NodeLists aren't exactly part of the JavaScript but they are instead part of
-the DOM APIs the browsers provide through JavaScript; this explains why NodeLists exist as a separate data structure than arrays in JavaScript, as pointed out by Mozilla engineer [Frank Yan](http://twitter.com/frankyan) in the comments.
+We should note here that NodeLists aren't exactly part of the JavaScript but
+they are instead part of the DOM APIs the browsers provide through JavaScript.
+We will come back to discussing the relationship between NodeLists and arrays
+later in the article again.
 
 Careful readers of the W3C definition will note that arrays in most languages,
 like JavaScript, are almost what this definition implies NodeLists are:
@@ -96,22 +96,36 @@ So those two elements, `myList` and `surelyArray` are definitely constructed
 by different constructors so it's no wonder that they don't share the same
 methods.
 
+<aside>
+  <p>
 Note that my examples here are contrived examples and using the `toString()`
-method on the constructor property of an Array is not ideal way, as
-pointed out in the comments by Frank Yan again. In your own code, you might
-want to use `instanceof` or some other more robust method to see if something
-is an array.
+method on the constructor property of an Array is not how you would want to
+check if something is an arrays. A better approach would be using `instanceof`
+or some other more robust method.
+  </p>
+</aside>
 
 In fact, it turns out that NodeLists support accessing elements by their index
 and they do have `length` property but that's essentially where the
 similarities end. If you want to call any of the array methods on a NodeList,
 you will just get an error.
 
-If you think about what NodeLists are and the re-read the definition, this
-(kind of) makes sense. While arrays are essentially a collection of elements
-held in memory and are part of the JavaScript, NodeLists are _live_ references
-to actual DOM elements, except for the `document.querySelectorAll()` method,
-which returns not live but static NodeLists.
+Let's think about why this is the case. If you think about what NodeLists are
+and the re-read the definition, this (kind of) makes sense. While arrays are
+essentially a collection of elements held in memory and are part of the
+JavaScript, NodeLists are _live_ references to actual DOM elements, except for
+the `document.querySelectorAll()` method, which returns not live but static
+NodeLists.
+
+<aside>
+  <p>
+Mozilla engineer [Frank Yan](http://twitter.com/frankyan/) explains this
+better than I could in the comments. The main reason NodeLists exist as a
+different data structure is that the DOM API is supposed to be language
+agnostic. If it were the case that NodeLists inherited from arrays, the DOM
+API would be tied to the constructs of the JavaScript language.
+  </p>
+</aside>
 
 Luckily, you can relatively easily convert NodeLists into arrays so that you
 can easily call all your favorite array methods like `push()`, `slice()` on
@@ -198,9 +212,9 @@ array, you are no longer dealing with a _live_ NodeList (again,
 `document.querySelectorAll()` actually returns not live but static NodeLists)
 but instead an array of DOM nodes.
 
-This has some interesting consequences. Going back to our
-example where we ran the `myArray.pop()`, you'd not the top Digg story
-disappearing as your array is just a collection of DOM nodes, not
+Converting a NodeList into an array has some interesting consequences. Going
+back to our example where we ran the `myArray.pop()`, you'd not the top Digg
+story disappearing as your array is just a collection of DOM nodes, not
 representation of your DOM anymore.
 
 However, the DOM objects themselves are _live_. So if you were to do something

@@ -60,6 +60,16 @@ nav {
   float : right;
 }
 
+aside {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px 5px 0 5px;
+  font-size   : 0.875em;
+  line-height : 1.25em;
+  width: 80%;
+  margin: 0 auto;
+}
+
 time {
   display : block;
 }
