@@ -32,8 +32,8 @@ understanding the relationship between JavaScript arrays and NodeLists.
 Careful readers of the W3C definition will note that arrays in most languages,
 like JavaScript, are almost what this definition implies NodeLists are:
 "ordered collection of (things)". In fact, NodeLists do in fact resemble
-arrays in a lot of ways. Let's see some examples, by testing things out on the
-Digg homepage.
+arrays in a lot of ways. Let's test things out by firing up our JavaScript
+console on the Digg homepage.
 
 {% highlight javascript %}
     > var myList = document.querySelectorAll('.story-item');
