@@ -9,7 +9,7 @@ is one of the most glaring issues. And of all those array-like objects,
 NodeLists are one of the most commonly used ones.
 
 The first thing to note is that NodeLists aren't exactly part of the
-JavaScript but they are instead part of the DOM API the browsers provide
+JavaScript but they are instead part of the DOM APIs the browsers provide
 through JavaScript. The relationship between DOM and JavaScript is beyond the
 scope of this article but knowing that NodeLists aren't exactly part of
 JavaScript language itself might be useful in understanding the relationship
@@ -159,8 +159,17 @@ NodeList and putting them into an array. Pretty simple:
       }"
 {% endhighlight %}
 
-There you have it, for real this time. Of course, if you really wanted to make
-things robust, you'd probably
+There you have it, for real this time, a real array from your NodeList.
+
+One thing is worth mentioning though; when you convert your NodeList into an
+array, you are no longer dealing with a _live_ NodeList but instead an array
+of DOM nodes. This has some interesting consequences. Going back to our
+example where we ran the `myArray.pop()`, you'd not the top Digg story
+disappearing as your array is just a collection of DOM nodes, not
+representation of your DOM anymore.
+
+However, the DOM objects themselves are _live_. So if you were to do something
+like `myArray[0].innerHTML('foo bar')`, you would instead change the DOM.
 
 NodeLists are a powerful tool and with more and more browsers getting decent
 DOM APIs, you might find yourself dealing with more NodeLists instead of
@@ -171,3 +180,6 @@ micro-library, you'll find that [it implements](https://github.com/madrobby/zept
 aspect of jQuery, the CSS DOM selector using the (relatively) new
 `document.querySelectorAll()` method and converting the NodeList to an array
 for easy further manipulation.
+
+I hope this brief introduction to NodeLists (and arrays) has been useful.
+Please let me know in the comments if you have any questions or corrections.
