@@ -5,14 +5,14 @@ type: index
 
 {% for post in site.posts limit:1 %}
   <div class="post">
-    <h2>
+    <h2 class="article-title">
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h2>
-    <time class="date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
-      {{ post.date | date_to_string }}
-    </time>
-    <article class="content">
+    <article>
       {{ post.content }}
     </article>
+    <time class="article-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+      {{ post.date | date_to_string }}
+    </time>
   </div>
 {% endfor %}

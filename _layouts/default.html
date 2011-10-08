@@ -2,7 +2,6 @@
 <head>
   <link rel="stylesheet" media="screen" href="/static/css/reset.css" type="text/css">
   <link rel="stylesheet" media="screen" href="/static/css/screen.css" type="text/css">
-  <link rel="stylesheet" media="screen" href="/static/css/syntax.css" type="text/css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=740">
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} Can Duruk</title>
@@ -21,24 +20,10 @@
   </script>
 </head>
 <body {% if page.type %}class="{{page.type}}"{% endif %}>
-    <header id="header">
-      <p class="name"><a href="/">Can Duruk</a></p>
-      <nav>
-        <ul class="menu">
-          <li><a href="/archive/">Archive</a></li>
-          <li><a href="/about/">About</a></li>
-        </ul>
-      </nav>
+    <header class="header">
     </header>
-    {{ content }}
-    <footer id="footer">
-      <nav>
-        <ul class="menu">
-          <li><a href="/archive/">Archive</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="https://github.com/cduruk/cduruk.github.com" target="_blank">Source</a></li>
-        </ul>
-      </nav>
-    </footer>
+      <div class="content">
+         {{ content }}
+      </div>
 </body>
 </html>
