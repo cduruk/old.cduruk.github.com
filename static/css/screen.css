@@ -51,7 +51,7 @@ aside p {
   width: 100%;
 }
 
-h1.article-title, h2 {
+h1.article-title, h2.article-title {
   margin: 25px 0 15px 0;
   font-size: 2em;
 }
