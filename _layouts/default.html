@@ -20,10 +20,17 @@
   </script>
 </head>
 <body {% if page.type %}class="{{page.type}}"{% endif %}>
-    <header class="header">
-    </header>
-      <div class="content">
-         {{ content }}
+    <div class="header">
+    </div>
+    <div class="content">
+      <div class="menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/archive">Archive</a></li>
+        </ul>
       </div>
+      {{ content }}
+    </div>
 </body>
 </html>

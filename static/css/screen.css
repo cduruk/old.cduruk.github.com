@@ -3,11 +3,11 @@ body {
   color: #bdbdbd;
   font-family: 'Lucida Grande', sans-serif;
   margin: 0 0 50px 0;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 p {
-  font-size: 13px;
-  line-height: 20px;
   margin: 1em 0;
   width: 600px;
 }
@@ -24,9 +24,49 @@ a:hover {
   color: #fff;
 }
 
+blockquote {
+  -webkit-transition: all 0.2s linear;
+  padding: 0 20px;
+  border-left: 4px solid #bdbdbd;
+}
+
+blockquote:hover {
+  border-left: 4px solid #fff;
+}
+
+aside {
+  -webkit-transition: all 0.2s linear;
+  width: 400px;
+  padding: 0 20px;
+  border: 1px solid #bdbdbd;
+  margin-left: 80px;
+  border-radius: 4px;
+}
+
+aside:hover {
+  border: 1px solid #fff;
+}
+
+aside p {
+  width: 100%;
+}
+
+h1.article-title, h2 {
+  margin: 25px 0 15px 0;
+  font-size: 2em;
+}
+
+.archive-date, code {
+  font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
+}
+
+.archive-item {
+  margin: 0.75em 0;
+}
+
 .header {
   border-top: 4px solid #fff;
-  height: 80px;
+  height: 20px;
 }
 
 .content{
@@ -42,11 +82,15 @@ a:hover {
   font-size: 12px;
 }
 
-.name {
-  font-size: 3em;
-  letter-spacing: 1px;
-  margin: 200px auto 20px auto;
-  text-transform: lowercase;
+.menu {
+  margin: 0 0 40px 0;
+}
+
+.menu ul li {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline
 }
 
 .highlight {

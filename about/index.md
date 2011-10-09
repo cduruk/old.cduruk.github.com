@@ -3,18 +3,15 @@ layout: default
 title: About
 type: about
 ---
-
-<img class="pretty-frame" src="/static/images/site/can-duruk.jpg" align="right" title="Can Duruk" alt="A photograph of Can Duruk" width="120px" height="133px"/>
-
-## Hi!
-
-### About Me
+## About Me
 I am Can Duruk, a developer with an eye for design. I am from Turkey, hence the funny name. I like building building user interfaces people love to use.
 
-### Background
-I currently work at [Digg](http://digg.com/) as a web developer. Before that, I studied at [Carnegie Mellon University](http://cmu.edu/) getting a double major in Cognitive Science and Human-Computer Interaction.
+## Background
+Currently, I work at [SnapGuide](http://snapguide.com).
 
-### Elsewhere
+Before, I have worked at [Digg](http://digg.com) and [Yahoo!](http://yahoo.com).
+
+## Elsewhere
 I lurk heavily on the internets, mostly going by the moniker `cduruk`.
 
 * [Twitter](http://twitter.com/cduruk)
