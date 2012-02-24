@@ -3,15 +3,22 @@ layout: default
 type: post
 ---
 
-<h1 class="article-title">
-  <a href="{{ page.url }}">{{ page.title }}</a>
-</h1>
-<article>
-  {{ content }}
-</article>
-<time class="article-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-  {{ page.date | date_to_string }}
-</time>
+<div class="post">
+  <div class="article">
+    <h1 class="article-title">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+    {{content}}
+  </div>
+  <div class="meta">
+    <p>Published:</p>
+    <time class="article-date" 
+          datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date_to_string }}
+    </time>
+  </div>
+</div>
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'candurukblog';

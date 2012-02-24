@@ -1,36 +1,27 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <head>
-  <link rel="stylesheet" media="screen" href="/static/css/reset.css" type="text/css">
-  <link rel="stylesheet" media="screen" href="/static/css/screen.css" type="text/css">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=740">
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} Can Duruk</title>
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-12212482-7']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
+  <title>Can Duruk</title>
+  <link href="/static/css/screen.css"
+        media="screen, projection"
+        rel="stylesheet" type="text/css" />
+  <link href="/static/css/syntax.css"
+        media="screen, projection"
+        rel="stylesheet" type="text/css" />
 </head>
-<body {% if page.type %}class="{{page.type}}"{% endif %}>
-    <div class="header">
-    </div>
-    <div class="content">
-      <div class="menu">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/archive">Archive</a></li>
+<body>
+  <div class="container">
+      <div class="header">
+        <ul class="nav">
+          <li><a href="/" title="">Home</a></li>
+          <li><a href="/about/" title="">About</a></li>
+          <li><a href="/archive/" title="">Archive</a></li>
         </ul>
+        <span class="name">Can Duruk</span>
       </div>
-      {{ content }}
-    </div>
+      <div class="content">
+        {{content}}
+      </div>
+  </div>
 </body>
-</html>
+

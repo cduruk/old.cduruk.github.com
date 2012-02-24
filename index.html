@@ -1,18 +1,22 @@
 ---
 layout: default
-type: index
 ---
 
-{% for post in site.posts limit:1 %}
+{% for post in site.posts limit:2 %}
   <div class="post">
-    <h2 class="article-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <article>
-      {{ post.content }}
-    </article>
-    <time class="article-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
-      {{ post.date | date_to_string }}
-    </time>
+    <div class="article">
+      <h1 class="article-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h1>
+      {{post.content}}
+    </div>
+    <div class="meta">
+      <p>Published:</p>
+      <time class="article-date" 
+            datetime="
+              {{ post.date | date: "%Y-%m-%d" }}">
+        {{ post.date | date_to_string }}
+      </time>
+    </div>
   </div>
 {% endfor %}
